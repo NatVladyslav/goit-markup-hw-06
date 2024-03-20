@@ -1,0 +1,35 @@
+body{
+    font-family: Roboto;
+    color: #2e2f42;;
+}
+address{
+    font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #434455;
+}
+
+
+
+.section-1{
+    background-color: #2E2F42;
+}
+.main-title{
+    color: #fff;
+}
+.button{
+background-color: #4d5ae5;
+}
+.button:hover{
+    background-color: #404bbf;
+}
+.team-images{
+    width: 264px;
+    height: 260px;
+}
+.portfolio-images{
+    width: 360px;
+    height: 300px;
+}
