@@ -4,30 +4,26 @@ body{
     color: #2e2f42;
     background-color: #fff;
     line-height: 1.5;
+    font-weight: 400;
 }
 ol, ul li{
     list-style-type: none;
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 /* HEADER ---------------------------------*/
 .logo-web{
-    font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.16667;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
-        color: #4d5ae5;
+        font-family: "Raleway", sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 1.17;
+            color: #4d5ae5;
+            letter-spacing: 0.03em;
 }
 .logo-studio{
-    font-family: "Raleway", sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 1.16667;
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
         color: #2e2f42;
 }
 .navigation-bar-item{
@@ -79,6 +75,7 @@ background-color: #4d5ae5;
 /*HERO-IMAGE-SECTION---------------------------------*/
 /* FEATURES-SECTION ---------------------------------*/
 .features-item-title{
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -93,7 +90,18 @@ background-color: #4d5ae5;
 .team{
     background: #f4f4fd;
 }
+.team-title{
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.11111;
+        letter-spacing: 0.02em;
+        text-align: center;
+}
+.team-item-list{
+    background-color: #fff;
+}
 .team-item-title{
+    font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
@@ -106,12 +114,14 @@ background-color: #4d5ae5;
 /* OUR-TEAM-SECTION --------------------------------------*/
 /* OUR-PORTFOLIO-SECTION ---------------------------------*/
 .portfolio-section-title{
+        font-weight: 700;
         font-size: 36px;
         line-height: 1.11111;
         letter-spacing: 0.02em;
         text-align: center;
 }
 .portfolio-item-title{
+        font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
