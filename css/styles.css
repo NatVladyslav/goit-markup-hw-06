@@ -42,14 +42,16 @@ h2, h3{
 }
 .address{
         font-style: normal;
+}
+.address-info-item{
         font-family: "Roboto", sans-serif;
         font-size: 16px;
         letter-spacing: 0.02em;
         color: #434455;
         text-decoration: none;
 }
-.address:hover,
-.address:focus{
+.address-info-item:hover,
+.address-info-item:focus{
     color: #404bbf;
 }
 /* HEADER ---------------------------------*/
