@@ -6,8 +6,10 @@ body{
     line-height: 1.5;
     font-weight: 400;
 }
-ol, ul li{
+ol, ul{
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 a{
     text-decoration: none;
@@ -16,7 +18,49 @@ a{
 h2, h3{
     color: #2E2F42;
 }
-/* HEADER ---------------------------------*/
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 1158px;
+    margin: 0 auto;
+    padding: 0;
+    border: 5px dashed red; /* delete after code review*/
+}
+section{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+/* HEADER ------------------------------- */
+.navigation-bar-list{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 40px;
+}
+.navigation-bar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 76px;
+    margin-right: 332px;
+}
+.address-info{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    align-items: center;
+    padding: 0;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 72px;
+    padding: 24px 15px;
+}
 .logo-web{
         font-family: "Raleway", sans-serif;
             font-size: 18px;
@@ -25,6 +69,8 @@ h2, h3{
             line-height: 1.17;
             color: #4d5ae5;
             letter-spacing: 0.03em;
+           
+
 }
 .logo-studio{
         color: #2e2f42;
@@ -58,6 +104,7 @@ h2, h3{
 /*HERO-IMAGE-SECTION---------------------------------*/
 .hero-image{
     background-color: #2E2F42;
+    height: 600px;
 }
 .hero-image-title{
         font-size: 56px;
@@ -65,6 +112,8 @@ h2, h3{
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
+        width: 496px;
+        height: 120px;
 }
 .button{
     font-family: 'Roboto', sans-serif;
@@ -74,7 +123,12 @@ h2, h3{
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
-    cursor: pointer;
+    cursor: pointer; /* Change cursor's type */
+    border: none;
+    border-radius: 4px;
+    padding: 16px 32px; 
+    width: 169px;
+    height: 56px;
 }
 .button:hover,
 .button:focus,
