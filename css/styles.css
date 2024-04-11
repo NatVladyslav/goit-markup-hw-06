@@ -23,14 +23,12 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
 }
 .container{
-    width: 1158px;
+    max-width: 1158px;
     margin: 0 auto;
-    padding: 0;
-    border: 5px dashed red; /* delete after code review*/
+    padding: 0 15px;
 }
 section{
-    padding-top: 120px;
-    padding-bottom: 120px;
+  padding: 120px 0;
 }
 /* HEADER ------------------------------- */
 .navigation-bar-list{
@@ -112,8 +110,8 @@ section{
         letter-spacing: 0.02em;
         text-align: center;
         color: #fff;
-        width: 496px;
-        height: 120px;
+        max-width: 496px;
+        margin: 0 auto 48px;
 }
 .button{
     font-family: 'Roboto', sans-serif;
@@ -125,10 +123,11 @@ section{
     color: #fff;
     cursor: pointer; /* Change cursor's type */
     border: none;
+    display: block;
     border-radius: 4px;
-    padding: 16px 32px; 
-    width: 169px;
-    height: 56px;
+    min-width: 169px;
+    padding: 16px 32px;
+    margin: 0 auto;
 }
 .button:hover,
 .button:focus,
@@ -137,6 +136,19 @@ section{
 }
 /*HERO-IMAGE-SECTION---------------------------------*/
 /* FEATURES-SECTION ---------------------------------*/
+.features-item{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+.features-item-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 8px;
+    max-width: 264px;
+}
 .features-item-title{
     font-weight: 500;
     font-size: 20px;
@@ -160,20 +172,39 @@ section{
         letter-spacing: 0.02em;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 72px;
+
+}
+.team-list{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
 }
 .team-item-list{
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+}
+.team-item-images{
+    display: block;
+    margin-bottom: 32px;
 }
 .team-item-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .team-item-text{
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-bottom: 32px;
 }
 /* OUR-TEAM-SECTION --------------------------------------*/
 /* OUR-PORTFOLIO-SECTION ---------------------------------*/
@@ -184,12 +215,36 @@ section{
         letter-spacing: 0.02em;
         text-align: center;
         text-transform: capitalize;
+        margin-bottom: 72px;
+}
+.portfolio-list {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+row-gap: 48px;
+column-gap: 24px;
+}
+.portfolio-list-item {
+width: calc((100% - 48px) / 3);
+}
+.portfolio-item-description{
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 32px 16px;
 }
 .portfolio-item-title{
         font-weight: 500;
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+}
+.portfolio-item-images{
+    display: block;
 }
 .portfolio-item-text{
         font-size: 16px;
