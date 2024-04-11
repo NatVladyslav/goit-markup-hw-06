@@ -5,7 +5,7 @@ body{
     background-color: #fff;
     line-height: 1.5;
     font-weight: 400;
-}
+}   
 ol, ul{
     list-style-type: none;
     margin: 0;
@@ -255,11 +255,25 @@ width: calc((100% - 48px) / 3);
 /* FOOTER ---------------------------------*/
 .footer{
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 .footer-text{
         font-size: 16px;
         letter-spacing: 0.02em;
         color: #f4f4fd;
+}
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+.footer-logo{
+    display: inline-block;
+    margin-bottom: 16px;
+}
+.footer-text{
+    max-width: 264px;
 }
 .logo-studio-footer{
     font-family: "Raleway", sans-serif;
