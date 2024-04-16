@@ -105,7 +105,7 @@ section{
     color: #404bbf;
 }
 /* HEADER ---------------------------------*/
-/*HERO-IMAGE-SECTION---------------------------------*/
+/*HERO-IMAGE-SECTION (1S)---------------------------------*/
 .hero-image{
     background-color: #2E2F42;
     padding: 188px 0;
@@ -141,7 +141,7 @@ section{
     background-color: #404bbf;
 }
 /*HERO-IMAGE-SECTION---------------------------------*/
-/* FEATURES-SECTION ---------------------------------*/
+/* FEATURES-SECTION (2S) ---------------------------------*/
 .features-item{
     display: flex;
     flex-direction: row;
@@ -180,7 +180,7 @@ section{
     color: #434455;
 }
 /* FEATURES-SECTION ---------------------------------*/
-/* OUR-TEAM-SECTION ---------------------------------*/
+/* OUR-TEAM-SECTION (3S) ---------------------------------*/
 .team{
     background: #f4f4fd;
 }
@@ -206,27 +206,31 @@ section{
     align-content: center;
     justify-content: center;
     align-items: center;
-
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .team-item-images{
     display: block;
-    margin-bottom: 32px;
+}
+.team-information{
+    padding: 32px 0;
 }
 .team-item-title{
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    text-align: center;
     margin-bottom: 8px;
 }
 .team-item-text{
     font-size: 16px;
     letter-spacing: 0.02em;
     color: #434455;
-    margin-bottom: 32px;
+    text-align: center;
 }
 /* OUR-TEAM-SECTION --------------------------------------*/
-/* OUR-PORTFOLIO-SECTION ---------------------------------*/
+/* OUR-PORTFOLIO-SECTION (4S) ---------------------------------*/
 .portfolio-section-title{
         font-weight: 700;
         font-size: 36px;
@@ -253,7 +257,6 @@ width: calc((100% - 48px) / 3);
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-    gap: 8px;
     padding: 32px 16px;
 }
 .portfolio-item-title{
@@ -261,6 +264,7 @@ width: calc((100% - 48px) / 3);
         font-size: 20px;
         line-height: 1.2;
         letter-spacing: 0.02em;
+        margin-bottom: 8px;
 }
 .portfolio-item-images{
     display: block;
@@ -290,6 +294,7 @@ width: calc((100% - 48px) / 3);
 .footer-logo{
     display: inline-block;
     margin-bottom: 16px;
+    display: inline-block;
 }
 .footer-text{
     max-width: 264px;
