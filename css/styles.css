@@ -33,6 +33,9 @@ img{
 /* HEADER ------------------------------- */
 .top-line{
     border-bottom: 1px solid #e7e9fc;
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 2px 1px 0 rgba(46, 47, 66, 0.08);
 }
 .header-logo {
     margin-right: 76px;
@@ -80,6 +83,7 @@ img{
     color: #404bbf;
 }
 .link-studio::after{
+    content: " ";
     background-color: #404bbf;
 }
 .navigation-bar-link::after {
@@ -95,7 +99,7 @@ img{
 .navigation-bar-link:hover:not(.link-studio),
 .navigation-bar-link:focus:not(.link-studio),
 .navigation-bar-link:active:not(.link-studio) {
-    color: #404bbf;
+color: #404bbf;
 }
 .navigation-bar-link:hover:not(.link-studio):after,
 .navigation-bar-link:focus::after,
@@ -128,6 +132,7 @@ background-color: #404bbf;
         text-decoration: none;
         padding: 24px 0;
         display: block; /*посилання по дефолту рядкові (для встановлення падінг робимо блоковим) */
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .address-info-item:hover,
 .address-info-item:focus{
@@ -138,6 +143,8 @@ background-color: #404bbf;
 .hero-image{
     background-color: #2E2F42;
     padding: 188px 0;
+    max-width: 1440px;
+    margin: 0 auto;
     background-image: linear-gradient(
         to bottom,
         rgba(46, 47, 66, 0.7),
@@ -146,7 +153,7 @@ background-color: #404bbf;
     url(../images/hero/hero-background-image.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 1440px;
+    background-size: cover;
 }
 .hero-image-title{
         font-size: 56px;
@@ -172,6 +179,7 @@ background-color: #404bbf;
     min-width: 169px;
     padding: 16px 32px;
     margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button:hover,
 .button:focus,
@@ -203,22 +211,24 @@ background-color: #404bbf;
     justify-content: flex-start;
     align-items: flex-start;
     max-width: 264px;
-    row-gap: 8px;
 }
 .features-icon-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 112px;
     width: 264px;
     border: 1px solid #8e8f99;
     border-radius: 4px;
     background-color: #f4f4fd;
     padding: 23px 0;
+    margin-bottom: 8px;
 }
 .features-item-title{
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 .features-item-text{
     font-size: 16px;
@@ -275,6 +285,7 @@ background-color: #404bbf;
 .team-social-list{
     display: flex;
     gap: 24px;
+    justify-content: center;
 }
 .social-link{
     display: flex;
@@ -284,10 +295,14 @@ background-color: #404bbf;
     height: 40px;
     background-color: #4d5ae5;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-link:hover,
 .social-link:focus{
     background-color: #404bbf;
+}
+.social-link-icon{
+    fill: #f4f4fd;
 }
 /* OUR-TEAM-SECTION --------------------------------------*/
 /* OUR-PORTFOLIO-SECTION (4S) ---------------------------------*/
@@ -308,6 +323,7 @@ column-gap: 24px;
 }
 .portfolio-list-item {
 width: calc((100% - 48px) / 3);
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-description{
     border: 1px solid #e7e9fc;
@@ -331,14 +347,17 @@ width: calc((100% - 48px) / 3);
     width: 100%;
     height: 100%;
     overflow: auto;
-    padding-top: 40px;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding: 40px 32px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(100%);
 }
-.portfolio-image-container:hover .portfolio-overlay{
+.portfolio-list-item:hover .portfolio-overlay{
     transform: translateX(0);
+}
+.portfolio-list-item:hover{
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-item-title{
         font-weight: 500;
@@ -377,16 +396,19 @@ width: calc((100% - 48px) / 3);
 }
 .footer-container{
     display: flex;
-    gap: 120px;
+    align-items: baseline;
+}
+.footer-content{
+    margin-right: 120px;
 }
 .footer-social-media{
     display: flex;
     flex-direction: column;
-    row-gap: 16px;
 }
 .footer-social-media-text{
     font-weight: 500;
     color: #fff;
+    margin-bottom: 16px;
 }
 .footer-social-link:hover,
 .footer-social-link:focus {
