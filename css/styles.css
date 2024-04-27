@@ -282,8 +282,12 @@ background-color: #404bbf;
     align-items: center;
     width: 40px;
     height: 40px;
-    background-color: #404bbf;
+    background-color: #4d5ae5;
     border-radius: 50%;
+}
+.social-link:hover,
+.social-link:focus{
+    background-color: #404bbf;
 }
 /* OUR-TEAM-SECTION --------------------------------------*/
 /* OUR-PORTFOLIO-SECTION (4S) ---------------------------------*/
@@ -313,6 +317,28 @@ width: calc((100% - 48px) / 3);
     justify-content: center;
     flex-direction: column;
     padding: 32px 16px;
+}
+.portfolio-image-container{
+    position: relative;
+    overflow: hidden;
+}
+.portfolio-overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #f4f4fd;
+    background: #4d5ae5;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding-top: 40px;
+    padding-left: 32px;
+    padding-right: 32px;
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(100%);
+}
+.portfolio-image-container:hover .portfolio-overlay{
+    transform: translateX(0);
 }
 .portfolio-item-title{
         font-weight: 500;
@@ -361,5 +387,9 @@ width: calc((100% - 48px) / 3);
 .footer-social-media-text{
     font-weight: 500;
     color: #fff;
+}
+.footer-social-link:hover,
+.footer-social-link:focus {
+    background-color: #31d0aa;
 }
 /* FOOTER ---------------------------------*/
