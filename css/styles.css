@@ -83,11 +83,11 @@ img{
     color: #404bbf;
 }
 .link-studio::after{
-    content: " ";
+    content: "";
     background-color: #404bbf;
 }
 .navigation-bar-link::after {
-    content: " ";
+    content: "";
     display: block;
     position: absolute;
     width: 100%;
