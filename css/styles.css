@@ -549,7 +549,7 @@ background-color: transparent;
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
-.modal-input-container {
+.form-input-container {
     margin-bottom: 8px;
 }
 .form-input-label {
@@ -564,7 +564,7 @@ background-color: transparent;
     position: relative;
 }
 .text-input-form {
-    color: #2e2f42;
+    color: rgba(46, 47, 66, 0.4);
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
