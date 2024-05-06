@@ -431,7 +431,7 @@ background-color: transparent;
 }
 .footer-form{
     display: flex;
-    column-gap: 24px;
+    gap: 24px;
 }
 .subscribe-email{
     padding: 8px 16px;
