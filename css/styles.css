@@ -487,7 +487,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .close-btn:active .close-btn-svg {
     fill: #ffffff;
 }
-
 .form-text-title {
     min-width: 360px;
     margin-bottom: 16px;
@@ -510,11 +509,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.04em;
     margin-bottom: 4px;
 }
-
 .form-input-wrapper {
     position: relative;
 }
-
 .text-input-form {
     color: #2e2f42;
     font-size: 12px;
@@ -522,11 +519,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     line-height: 1.17;
     letter-spacing: 0.04em;
 }
-
 .text-input-form::placeholder {
     color: rgba(46, 47, 66, 0.4);
 }
-
 .form-input-wrapper input {
     width: 100%;
     height: 40px;
@@ -538,17 +533,14 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 11px 0 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-input-wrapper input:focus,
 .form-input-wrapper input:active {
     border-color: #4d5ae5;
 }
-
 .form-input-wrapper input:focus+.form-input-svg,
 .form-input-wrapper input:active+.form-input-svg {
     fill: #4d5ae5;
 }
-
 .form-input-svg {
     position: absolute;
     left: 16px;
@@ -557,11 +549,9 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     fill: #2e2f42;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-container-comment {
     margin-bottom: 16px;
 }
-
 .form-input-container textarea {
     width: 100%;
     height: 120px;
@@ -573,16 +563,13 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     background-color: transparent;
     outline: transparent;
 }
-
 .form-input-container textarea:focus,
 .form-input-container textarea:active {
     border-color: #4d5ae5;
 }
-
 .form-container-checkbox {
     margin-bottom: 24px;
 }
-
 .form-checkbox-lable {
     font-size: 12px;
     line-height: 1.17;
@@ -590,7 +577,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
     color: #8e8f99;
 }
-
 .form-privacy-link {
     text-decoration: underline;
     color: #4d5ae5;
@@ -598,16 +584,13 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-privacy-link:hover,
 .form-privacy-link:focus {
     color: #20266b;
 }
-
 .form-privacy-link:focus {
     outline: 2px solid #404bbf;
 }
-
 .form-svg-wrapper {
     display: inline-flex;
     align-items: center;
@@ -620,28 +603,23 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 8px;
     fill: transparent;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-        border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-checkbox-svg {
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-checkbox-policy:checked+.form-checkbox-lable>.form-svg-wrapper {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
 }
-
 .form-checkbox-policy:focus+.form-checkbox-lable>.form-svg-wrapper {
     border-color: #4d5ae5;
 }
-
 .form-checkbox-policy:checked+.form-checkbox-lable .form-checkbox-svg {
     fill: #ffffff;
 }
-
 .form-send-btn {
     display: block;
     margin: 0 auto;
@@ -658,7 +636,6 @@ transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.04em;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .form-send-btn:focus,
 .form-send-btn:active,
 .form-send-btn:hover {
