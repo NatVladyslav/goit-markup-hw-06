@@ -63,9 +63,6 @@ button {
 input {
     font-family: inherit;
 }
-.hidden {
-    display: none;
-}
 .container {
     max-width: 320px;
     padding-left: 15px;
