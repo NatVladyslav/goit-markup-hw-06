@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <script src="./open-script.js"></script>
     <title>WebStudio</title>
   </head>
   <body>
@@ -52,7 +53,7 @@
             </li>
           </ul>
         </address>
-        <button class="menu-open-btn" type="button">
+        <button class="menu-open-btn" type="button" onclick="openMenu()">
           <svg class="menu-open-btn-icon" width="20" height="20">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -66,7 +67,9 @@
           <h1 class="hero-image-title">
             Effective Solutions for Your Business
           </h1>
-          <button type="button" class="button">Order Service</button>
+          <button type="button" class="button" onclick="openBackdrop()">
+            Order Service
+          </button>
         </div>
       </section>
       <!--     ========================= FEATURES ================== -->
@@ -542,9 +545,9 @@
       </div>
     </footer>
     <!-- ===================BACKDROP================== -->
-    <div class="backdrop">
+    <div class="backdrop" id="backdrop">
       <div class="backdrop-wrapper">
-        <button class="close-btn" type="button">
+        <button class="close-btn" type="button" onclick="closeBackdrop()">
           <svg class="close-btn-svg" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -628,9 +631,13 @@
       </div>
     </div>
     <!-- ====================MENU======================= -->
-    <div class="mobile-menu">
+    <div class="mobile-menu" id="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close-btn" type="button">
+        <button
+          class="mobile-menu-close-btn"
+          type="button"
+          onclick="closeMenu()"
+        >
           <svg class="mobile-menu-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>

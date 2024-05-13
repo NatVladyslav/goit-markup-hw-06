@@ -1028,18 +1028,17 @@ section {
     fill: transparent;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.form-checkbox-policy:checked+.form-checkbox-lable>.form-svg-wrapper {
+.form-checkbox-policy:checked + .form-checkbox-lable > .form-svg-wrapper {
     background-color: #404bbf;
     border: none;
     fill: #f4f4fd;
 }
 
-.form-checkbox-policy:focus+.form-checkbox-lable>.form-svg-wrapper {
+.form-checkbox-policy:focus + .form-checkbox-lable > .form-svg-wrapper {
     border-color: #4d5ae5;
 }
 
-.form-checkbox-policy:checked+.form-checkbox-lable .form-checkbox-svg {
+.form-checkbox-policy:checked + .form-checkbox-lable .form-checkbox-svg {
     fill: #ffffff;
 }
 
